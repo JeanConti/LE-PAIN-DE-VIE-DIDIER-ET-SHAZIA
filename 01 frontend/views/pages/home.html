@@ -13,7 +13,7 @@
 
 <body>
   <!-- Header &Navbar -->
-  <header class='header bg-dark text-white fixed-top z-3 mb-5'>
+  <header class='header bg-dark text-white fixed-top mb-5' style='z-index: 100;'>
     <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container-fluid">
 
@@ -45,16 +45,11 @@
   <!-- Section Home -->
   <section class="home mt-5 pt-1">
     <div class="container-fluid mt-5">
-      <h1 class='text-dark text-center'>Le Pain de Vie</h1>
-      <p class='text-dark text-center mb-5'>Le Pain de Vie est une boulangerie qui propose des produits BIO de qualité
-        et des
-        services exceptionnels.</p>
 
       <!-- Carousel -->
-
-
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade mx-auto" style="max-width: 100%;">
         <div class="carousel-indicators">
+
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -63,11 +58,19 @@
             aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner active">
+          <h1
+            class='text-light text-center position-absolute top-50 start-50 end-25 translate-middle bg-black bg-opacity-50 fs-1 fw-bold text-center p-3 rounded z-2'>
+            Le Pain de Vie</h1>
+          <p class='text-light text-center position-absolute top-50 start-50 end-25 translate-middle bg-black bg-opacity-50 fw-bold text-center p-1 rounded z-2'
+            style='margin-top: 80px;'>
+            Le Pain de Vie est une boulangerie qui propose des produits BIO de qualité et des services exceptionnels.
+          </p>
           <div class="carousel-item active">
             <img src="../../public/images/carousel/pexels-orlovamaria-4913487-grande.jpg"
               class="img-fluid d-block w-100" style='width: 100vh;' alt="planetary-image">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
+
+            <!-- <div class="carousel-caption d-none d-md-block">
+            </div> -->
           </div>
           <div class="carousel-item active">
             <img src="../../public/images/carousel/pexels-danikprihodko-8176275-grande.jpg"
