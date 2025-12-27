@@ -7,3 +7,27 @@
   align-items: center;
 }
 
+/* Info-card */
+.card {
+    transition: .5s;
+    background: #fff3e0 !important ;
+}
+
+.card:hover {
+    margin-top: -10px;
+    background: #faf8f8 !important;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+/* About */
+.img-twice::before {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 80%;
+    top: 10%;
+    left: 20%;
+    border: 25px solid var(--light);
+    border-radius: 6px;
+    z-index: -1;
+}
