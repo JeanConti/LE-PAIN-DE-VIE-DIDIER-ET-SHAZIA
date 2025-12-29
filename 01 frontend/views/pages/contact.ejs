@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <% include ../partials/header.ejs %>
+
+    <section class='contact-title'>
+      <div class='title-img position-relative mb-5 mt-5'>
+        <h1
+          class='text-white position-absolute top-50 start-50 end-25 translate-middle bg-black bg-opacity-50 fs-1 fw-bold text-center p-3 rounded'>
+          Contact</h1>
+      </div>
+    </section>
+
+    <section class='contact-form'>
+      <div class="container-xxl py-6">
+        <div class="container">
+          <div class='text-center mx-auto mb-5' data-bs-delay="0.1s" style="max-width: 500px;">
+            <h1 class='display-6 fw-bold mb-4'>Si vous avez besoin d'aide ou une question n'hésitez pas à nous contacter
+            </h1>
+          </div>
+          <div class="row g-0 justify-content-center">
+            <div class='col-lg-8 fade-up' data-bs-delay='0.1s'>
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="nom" placeholder="Votre nom">
+                      <label for="nom">Votre nom</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="email" placeholder="Votre email">
+                      <label for="email">Votre email</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input type="objet" class="form-control" id="object" placeholder="Object">
+                      <label for="object">Object</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea class="form-control" id="message" placeholder="Votre message"
+                        style="height: 250px;"></textarea>
+                      <label for="message">Votre message</label>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button class="btn btn-warning rounded-pill py-3 px-5" type="submit">Envoyer</button>
+                  </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <% include ../partials/footer.ejs %>
+</body>
+
+</html>
