@@ -26,7 +26,24 @@ app.get("/produits", async (req, res) => {
   res.render("pages/produits", { produits: produits.data });
 });
 
+// Récupération des données du formulaire de contact
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 
+// POST 
+app.post("/contact", async (req, res) => {
+  const { nom, email, object, message } = req.body;
+})
+
+console.log(nom, object, email, message);
+
+// Envoi des données à l'API NestJS
+await express.post("http://localhost:3000/api/contact", {
+  nom, email, object, message
+})
+
+// Réponse après l'envoi du formulaire
+res.redirect("Merci pour votre message")
 
 
 app.listen(port, () => {
