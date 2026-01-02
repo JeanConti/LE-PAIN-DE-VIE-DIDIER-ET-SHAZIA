@@ -4,10 +4,11 @@ const path = require('path');
 const app = express();
 const port = 3800;
 
+// Server app
 app.use(express.static("public"));
 
 
-// moteur de templates
+// Moteur de templates => EJS
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
@@ -19,6 +20,14 @@ app.get("/", (req, res) => {
     nomBoulangerie: "Le Pain de Vie"
   });
 });
+
+app.get("/produits", async (req, res) => {
+  const produits = await express.get("http://localhost:3000/api/produits");
+  res.render("pages/produits", { produits: produits.data });
+});
+
+
+
 
 app.listen(port, () => {
   console.log(`Frontend sur http://localhost:${port}`);

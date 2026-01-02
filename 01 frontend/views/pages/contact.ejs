@@ -40,31 +40,32 @@
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input type="email" class="form-control" id="nom" placeholder="Votre nom">
+                    <input type="email" class="form-control" id="nom" name='nom' placeholder="Votre nom">
                     <label for="nom">Votre nom</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating">
-                    <input type="email" class="form-control" id="email" placeholder="Votre email">
+                    <input type="email" class="form-control" id="email" name='email' placeholder="Votre email">
                     <label for="email">Votre email</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-floating">
-                    <input type="objet" class="form-control" id="object" placeholder="Object">
+                    <input type="objet" class="form-control" id="object" name='object' placeholder="Object">
                     <label for="object">Object</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-floating">
-                    <textarea class="form-control" id="message" placeholder="Votre message"
+                    <textarea class="form-control" id="message" name='message' placeholder="Votre message"
                       style="height: 250px;"></textarea>
                     <label for="message">Votre message</label>
                   </div>
                 </div>
                 <div class="col-12 text-center">
-                  <button class="btn btn-warning rounded-pill py-3 px-5" type="submit">Envoyer</button>
+                  <button class="btn btn-warning rounded-pill py-3 px-5" type="submit" id="submit"
+                    name='submit'>Envoyer</button>
                 </div>
             </form>
           </div>
