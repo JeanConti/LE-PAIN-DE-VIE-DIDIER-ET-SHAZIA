@@ -8,12 +8,12 @@
 }
 
 /* Info-card */
-.card {
+.card-stats {
     transition: .5s;
     background: #fff3e0 !important ;
 }
 
-.card:hover {
+.card-stats:hover {
     margin-top: -10px;
     background: #faf8f8 !important;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
