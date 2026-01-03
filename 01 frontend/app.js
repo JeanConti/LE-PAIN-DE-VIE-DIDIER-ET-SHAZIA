@@ -1,11 +1,16 @@
 const express = require('express');
 const path = require('path');
+const helmet = require('helmet');
 
 const app = express();
 const port = 3800;
 
 // Server app
 app.use(express.static("public"));
+
+// Helmet => Sécurité
+app.use(helmet({ contentSecurityPolicy: false }));
+
 
 
 // Moteur de templates => EJS
@@ -40,6 +45,13 @@ console.log(nom, object, email, message);
 // Envoi des données à l'API NestJS
 await express.post("http://localhost:3000/api/contact", {
   nom, email, object, message
+})
+
+// Cookies sécurisés
+res.cookie('token', token, {
+  httpOnly: true,
+  secure: true,
+  sameSite: 'strict'
 })
 
 // Réponse après l'envoi du formulaire
