@@ -1,3 +1,14 @@
+body, section {
+background: 	#FCF0E4;
+}
+
+.mininav {
+  margin-top: 81px;
+  margin-bottom: 15px;
+  display: grid;
+  justify-content: center;
+}
+
 .home title-img {
  background: linear-gradient(to top, rgba(30,35,38,0.8), rgba(30,35,38,1)),
   url(../images/pexels-pixabay-461060.jpg);
