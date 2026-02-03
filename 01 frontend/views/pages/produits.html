@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shorcut icon" href="../../public/images/logo/panadero-64px.png">
+  <link rel="shorcut icon" href="../../public/images/logo/Logo-vecteur-2.png">
   <link rel="stylesheet" href="../../public/css/bootstrap-5.3.8-dist/css/bootstrap.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -19,11 +19,11 @@
       <div class="container-fluid">
 
         <a class="navbar-brand" href="../pages/home.html">
-          <img src="../../public/images/logo/panadero-64px.png" alt="Bootstrap" width="30" height="24">
+          <img src="../../public/images/logo/Logo-vecteur-2.png" alt="Bootstrap" width="50px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon custom-toggler"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center me-5" id="navbarNav">
           <ul class="navbar-nav">
@@ -37,6 +37,9 @@
               <a class="nav-link text-light" href="../pages/about.html">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link text-light" href="../pages/galerie.html">Galerie</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link text-light" href="../pages/contact.html">Contact</a>
             </li>
           </ul>
@@ -45,44 +48,52 @@
     </nav>
   </header>
 
+  <section class="home title">
+    <div class='title-img position-relative mb-5 mt-5'>
+      <h1
+        class='text-white position-absolute top-50 start-50 end-25 translate-middle bg-black bg-opacity-50 fs-1 fw-bold text-center p-3 rounded'>
+        Produits</h1>
+    </div>
+  </section>
+
   <section class="produits text-center mt-5" style="margin-top: 1000px;">
     <div class="container mt-5">
-      <div class="row g-4 mt-5">
-        <div class="col-12 col-md-6">
-          <div class="card border-0" style="background-color: #eec07b">
-            <a href="./pain.html"><img class="card-img-top img-fluid w-50 rounded"
-                src="../../public/images/produits/Pains.jpg" alt=""></a>
-            <div class="card-body mt-3" style="background-color: #c49959">
+      <div class="row g-4 mt-5 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="card border-0" style="background-color: #FCF0E4">
+            <a href="./pain.html"><img class="card-img-top img-fluid w-50 rounded mx-auto d-block"
+                src="../../public/images/produits/Pains.jpg" alt="Pain Artisanal"></a>
+            <div class="card-body mt-3" style="background-color: #f0d1a0">
               <h5 class="card-title">Pain Artisanal</h5>
               <p class="card-text">Pain artisanal à l'ancienne</p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="card border-0" style="background-color: #eec07b">
-            <a href="./pizzas.html"><img src="../../public/images/produits/pexels-catscoming-367915-grande-2.jpg"
-                class="card-img-top img- fluid rounded w-50" alt=""></a>
-            <div class="card-body mt-3" style="background-color: #c49959">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="card border-0" style="background-color: #FCF0E4">
+            <a href="./pizza.html"><img src="../../public/images/produits/pexels-catscoming-367915-grande-2.jpg"
+                class="card-img-top img-fluid rounded w-50 mx-auto d-block" alt="Pizzas"></a>
+            <div class="card-body mt-3" style="background-color: #f0d1a0">
               <h5 class="card-title">Pizzas</h5>
               <p class="card-text">Pizzas à la sauce tomate, sauce BBQ, sauce pesto</p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="card border-0" style="background-color: #eec07b">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="card border-0" style="background-color: #FCF0E4">
             <a href="./brioche.html"><img src="../../public/images/produits/Brioche-grande.jpg"
-                class="card-img-top w-50 rounded" alt=""></a>
-            <div class="card-body mt-3" style="color: #6d3200;">
+                class="card-img-top img-fluid w-50 rounded mx-auto d-block" alt="Brioche"></a>
+            <div class="card-body mt-3" style="background-color: #f0d1a0">
               <h5 class="card-title">Brioche</h5>
               <p class="card-text">Faite maison</p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="card border-0" style="background-color: #eec07b">
-            <a href="./Viennoiseries.html"><img src="../../public/images/produits/Viennoiseries.jpg"
-                class="card-img-top img-fluid w-50 rounded" alt=""></a>
-            <div class="card-body mt-3" style="color: #6d3200;">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="card border-0" style="background-color: #FCF0E4">
+            <a href="./viennoiserie.html"><img src="../../public/images/produits/Viennoiseries.jpg"
+                class="card-img-top img-fluid w-50 rounded mx-auto d-block" alt="Viennoiseries"></a>
+            <div class="card-body mt-3" style="background-color: #f0d1a0">
               <h5 class="card-title">Viennoiseries</h5>
               <p class="card-text">Des deliceuses viennoiseries artisanales</p>
             </div>
@@ -93,34 +104,62 @@
   </section>
 
   <!-- Footer -->
-  <div class="container-fluid text-light my-4 mb-0 py-3 fade-in-up mt-5" style="background-color: #1E1916;">
-    <div class="container py-3">
-      <div class="row g-5">
-        <div class='col-lg-3 col-md-6'>
-          <h3 class='text-light mb-3'>Où nous trouver</h3>
-          <p class="mb-2" style="width: 150%;">
-            <i class="fa fa-map-marker-alt me-3"></i>
-            2448 Route de <br> Saint Julien 69460 Blacé
-          </p>
-          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i> 6 17 51 54 08</p>
-          <p class="mb-2"><i class="fa fa-envelope me-3"></i> didier.genetier7@gmail.com</p>
-          <div class='d-flex pt-2'>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                class="fab fa-linkedin-in"></i></a>
+  <div class="container-fluid text-light mt-5 py-4 fade-in-up" style="background-color: #1E1916;">
+    <div class="container">
+      <div class="row gy-5 gx-5">
+
+        <!-- CONTACT -->
+        <div class="col-lg-4 col-md-6">
+          <h3 class="text-light mb-4">Où nous trouver</h3>
+
+          <div class="d-flex align-items-start gap-3 mb-3">
+            <i class="fa fa-map-marker-alt fs-5 text-light"></i>
+            <span>
+              2448 Route de Saint Julien<br>
+              69460 Blacé
+            </span>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <i class="fa fa-phone-alt fs-5 text-light"></i>
+            <span>06 17 51 54 08</span>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <i class="fa fa-envelope fs-5 text-light"></i>
+            <span>didier.genetier7@gmail.com</span>
+          </div>
+
+          <div class="d-flex gap-2">
+            <a class="btn btn-outline-light rounded-circle" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="btn btn-outline-light rounded-circle"
+              href="https://www.facebook.com/profile.php?id=100068434713664&locale=es_LA">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn btn-outline-light rounded-circle" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a class="btn btn-outline-light rounded-circle" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
           </div>
         </div>
-        <div class='col-lg-3 col-md-6'>
-          <h4 class='ms-2 mt-1'>Links</h4>
-          <ul class="list-unstyled">
-            <li><a class='btn btn-link text-light' style="text-decoration: none;" href="">About</a></li>
-            <li><a class='btn btn-link text-light' style="text-decoration: none;" href="">Services</a></li>
-            <li><a class='btn btn-link text-light' style="text-decoration: none;" href="">Contact</a></li>
+
+        <!-- ESPACE VISUEL (desktop only) -->
+        <div class="col-lg-1 d-none d-lg-block"></div>
+
+        <!-- LINKS -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="mb-4">Liens</h4>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a class="text-light text-decoration-none" href="#">À propos</a></li>
+            <li><a class="text-light text-decoration-none" href="#">Services</a></li>
+            <li><a class="text-light text-decoration-none" href="#">Contact</a></li>
           </ul>
         </div>
+
       </div>
     </div>
   </div>

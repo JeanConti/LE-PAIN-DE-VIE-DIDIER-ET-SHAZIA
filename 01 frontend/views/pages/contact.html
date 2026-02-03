@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="keywords" content="pain, de, vie, boulangerie, didier, shazia" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shorcut icon" href="../../public/images/logo/panadero-64px.png">
+  <link rel="shorcut icon" href="../../public/images/logo/Logo-vecteur-2.png">
   <link rel="stylesheet" href="../../public/css/bootstrap-5.3.8-dist/css/bootstrap.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -18,12 +18,13 @@
   <header class='header bg-dark text-white fixed-top mb-5' style='z-index: 100;'>
     <nav class="navbar navbar-expand-lg bg-dark fw-bold">
       <div class="container-fluid">
+
         <a class="navbar-brand" href="../pages/home.html">
-          <img src="../../public/images/logo/panadero-64px.png" alt="Bootstrap" width="30" height="24">
+          <img src="../../public/images/logo/Logo-vecteur-2.png" alt="Bootstrap" style='width: 50px;'>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon custom-toggler"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center me-5" id="navbarNav">
           <ul class="navbar-nav">
@@ -37,6 +38,9 @@
               <a class="nav-link text-light" href="../pages/about.html">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link text-light" href="../pages/galerie.html">Galerie</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link text-light" href="../pages/contact.html">Contact</a>
             </li>
           </ul>
@@ -45,7 +49,7 @@
     </nav>
   </header>
 
-  <section class='contact-title'>
+  <section class='home title'>
     <div class='title-img position-relative mb-5 mt-5'>
       <h1
         class='text-white position-absolute top-50 start-50 end-25 translate-middle bg-black bg-opacity-50 fs-1 fw-bold text-center p-3 rounded'>
@@ -53,47 +57,100 @@
     </div>
   </section>
 
-  <section class='contact-form'>
+
+  <section class="contact-form">
     <div class="container-xxl py-6">
       <div class="container">
-        <div class='text-center mx-auto mb-5' data-bs-delay="0.1s" style="max-width: 500px;">
-          <h1 class='display-6 fw-bold mb-4'>Si vous avez besoin d'aide ou une question n'hésitez pas à nous contacter
+
+        <!-- TITRE -->
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+          <h1 class="display-6 fw-bold">
+            Si vous avez besoin d'aide ou une question, n'hésitez pas à nous contacter
           </h1>
         </div>
-        <div class="row g-0 justify-content-center">
-          <div class='col-lg-8 fade-up' data-bs-delay='0.1s'>
-            <form class='bg-dark p-3 rounded'>
-              <div class="row g-3 ">
+
+        <!-- FORM + INFOS -->
+        <div class="row g-5 align-items-stretch">
+
+          <!-- FORMULAIRE -->
+          <div class="col-lg-7">
+            <form class="p-4 rounded border border-dark h-100">
+              <div class="row g-3">
+
                 <div class="col-md-6">
-                  <div class="form-floating">
-                    <input type="email" class="form-control" id="nom" name='nom' placeholder="Votre nom">
+                  <div class="form-floating border border-dark rounded">
+                    <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom">
                     <label for="nom">Votre nom</label>
                   </div>
                 </div>
+
                 <div class="col-md-6">
-                  <div class="form-floating">
-                    <input type="email" class="form-control" id="email" name='email' placeholder="Votre email">
+                  <div class="form-floating border border-dark rounded">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Votre email">
                     <label for="email">Votre email</label>
                   </div>
                 </div>
+
                 <div class="col-12">
-                  <div class="form-floating">
-                    <input type="objet" class="form-control" id="object" name='object' placeholder="Object">
-                    <label for="object">Object</label>
+                  <div class="form-floating border border-dark rounded">
+                    <input type="text" class="form-control" id="object" name="object" placeholder="Objet">
+                    <label for="object">Objet</label>
                   </div>
                 </div>
+
                 <div class="col-12">
-                  <div class="form-floating">
-                    <textarea class="form-control" id="message" name='message' placeholder="Votre message"
-                      style="height: 250px;"></textarea>
+                  <div class="form-floating border border-dark rounded">
+                    <textarea class="form-control" id="message" name="message" placeholder="Votre message"
+                      style="height: 220px;"></textarea>
                     <label for="message">Votre message</label>
                   </div>
                 </div>
-                <div class="col-12 text-center">
-                  <button class="btn btn-warning rounded-pill py-3 px-5" type="submit" id="submit"
-                    name='submit'>Envoyer</button>
+
+                <div class="col-12 text-center mt-4">
+                  <button class="btn text-light rounded-pill py-3 px-5" style="background-color: #6d3200;"
+                    type="submit">
+                    Envoyer
+                  </button>
                 </div>
+
+              </div>
             </form>
+          </div>
+
+          <!-- INFOS CONTACT -->
+          <div class="col-lg-5">
+            <div class="p-4 rounded border border-dark h-100">
+
+              <h4 class="mb-4" style="color:#6d3200;">Informations de contact</h4>
+
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <i class="fa fa-map-marker-alt fs-4" style="color:#6d3200;"></i>
+                <span>
+                  2448 Route de Saint Julien, 69460 Blacé
+                </span>
+              </div>
+
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <i class="fa fa-phone-alt fs-4" style="color:#6d3200;"></i>
+                <span>06 17 51 54 08</span>
+              </div>
+
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <i class="fa fa-envelope fs-4" style="color:#6d3200;"></i>
+                <span>didier.genetier7@gmail.com</span>
+              </div>
+
+              <hr>
+
+              <p class="fw-semibold mb-2" style="color:#6d3200;">Horaires d’ouverture</p>
+              <p class="mb-1"><strong>Naissonnet de Blaceret:</strong> <br>Lundi - Mercredi - Vendredi: 15h30 - 19h30
+              </p>
+              <p class="mb-1"><strong>Marché Bio de Vilefranche:</strong> <br>Samedi: 8h00 - 12h30</p>
+              <p class="mb-1"><strong>Marché Bio du Bois d'Oing:</strong> <br>Mardi: 8h00 - 12h, Vendredi: 15h30 - 19h30
+              </p>
+              <p class="mb-1"><strong>Marché Bio de Jassan:</strong> <br>Mercredi: 15h00 - 19h00</p>
+
+            </div>
           </div>
 
         </div>
@@ -101,35 +158,64 @@
     </div>
   </section>
 
+
   <!-- Footer -->
-  <div class="container-fluid text-light my-4 mb-0 py-3 fade-in-up mt-5" style="background-color: #1E1916;">
-    <div class="container py-3">
-      <div class="row g-5">
-        <div class='col-lg-3 col-md-6'>
-          <h3 class='text-light mb-3'>Où nous trouver</h3>
-          <p class="mb-2" style="width: 150%;">
-            <i class="fa fa-map-marker-alt me-3"></i>
-            2448 Route de <br> Saint Julien 69460 Blacé
-          </p>
-          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i> 6 17 51 54 08</p>
-          <p class="mb-2"><i class="fa fa-envelope me-3"></i> didier.genetier7@gmail.com</p>
-          <div class='d-flex pt-2'>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                class="fab fa-linkedin-in"></i></a>
+  <div class="container-fluid text-light mt-5 py-4 fade-in-up" style="background-color: #1E1916;">
+    <div class="container">
+      <div class="row gy-5 gx-5">
+
+        <!-- CONTACT -->
+        <div class="col-lg-4 col-md-6">
+          <h3 class="text-light mb-4">Où nous trouver</h3>
+
+          <div class="d-flex align-items-start gap-3 mb-3">
+            <i class="fa fa-map-marker-alt fs-5 text-light"></i>
+            <span>
+              2448 Route de Saint Julien<br>
+              69460 Blacé
+            </span>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <i class="fa fa-phone-alt fs-5 text-light"></i>
+            <span>06 17 51 54 08</span>
+          </div>
+
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <i class="fa fa-envelope fs-5 text-light"></i>
+            <span>didier.genetier7@gmail.com</span>
+          </div>
+
+          <div class="d-flex gap-2">
+            <a class="btn btn-outline-light rounded-circle" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="btn btn-outline-light rounded-circle"
+              href="https://www.facebook.com/profile.php?id=100068434713664&locale=es_LA">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn btn-outline-light rounded-circle" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a class="btn btn-outline-light rounded-circle" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
           </div>
         </div>
-        <div class='col-lg-3 col-md-6'>
-          <h4 class='ms-2 mt-1'>Links</h4>
-          <ul class="list-unstyled">
-            <li><a class='btn btn-link text-light' style="text-decoration: none;" href="">About</a></li>
-            <li><a class='btn btn-link text-light' style="text-decoration: none;" href="">Services</a></li>
-            <li><a class='btn btn-link text-light' style="text-decoration: none;" href="">Contact</a></li>
+
+        <!-- ESPACE VISUEL (desktop only) -->
+        <div class="col-lg-1 d-none d-lg-block"></div>
+
+        <!-- LINKS -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="mb-4">Liens</h4>
+          <ul class="list-unstyled d-flex flex-column gap-2">
+            <li><a class="text-light text-decoration-none" href="#">À propos</a></li>
+            <li><a class="text-light text-decoration-none" href="#">Services</a></li>
+            <li><a class="text-light text-decoration-none" href="#">Contact</a></li>
           </ul>
         </div>
+
       </div>
     </div>
   </div>
@@ -142,13 +228,13 @@
           &copy; <a href="#">Nom du site</a>, Tous droits réservés.
         </div>
         <div class="col-md-6 text-center text-md-end">
-          <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-          Design: <a href="">Jean-Michel CONTI</a>
+          Design: <a href="portfolio-jean-contis-projects.vercel.app">Jean-Michel CONTI</a>
         </div>
       </div>
     </div>
   </div>
 
 </body>
+<script src="../../public/css/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
 
 </html>

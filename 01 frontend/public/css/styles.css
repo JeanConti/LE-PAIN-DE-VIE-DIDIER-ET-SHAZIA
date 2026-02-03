@@ -1,6 +1,22 @@
 body, section {
 background: 	#FCF0E4;
 }
+.custom-toggler {
+      background-image: url("data:image/svg+xml;charset=utf8,\
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'>\
+    <path stroke='rgba(120,72,24,1)' stroke-width='2' stroke-linecap='round'\
+      d='M4 7h22M4 15h22M4 23h22'/>\
+  </svg>");
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
 
 .mininav {
   margin-top: 81px;
@@ -9,9 +25,9 @@ background: 	#FCF0E4;
   justify-content: center;
 }
 
-.home title-img {
+.home .title-img {
  background: linear-gradient(to top, rgba(30,35,38,0.8), rgba(30,35,38,1)),
-  url(../images/pexels-pixabay-461060.jpg);
+  url(../images/carousel/Assortiment-de-viennoiseries-fraîches.png);
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -26,7 +42,7 @@ background: 	#FCF0E4;
 
 .card-stats:hover {
     margin-top: -10px;
-    background: #faf8f8 !important;
+    background: #eec07b !important;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
 }
 
@@ -42,14 +58,7 @@ background: 	#FCF0E4;
     border-radius: 6px;
     z-index: -1;
 }
-.contact-title .title-img {
-  background: linear-gradient(to top, rgba(30,35,38,0.8), rgba(30,35,38,1)),
-  url(../../public/images/carousel/pexels-orlovamaria-4913487-grande.jpg);
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
+
 
 
 /* Produits */
@@ -58,12 +67,11 @@ background: 	#FCF0E4;
 }
 
 .product-item:hover {
-    background: #FFC107 !important;
+    background: #6d3200 !important;
+    color: #fff !important;
 }
 
-.product-item:hover * {
-    color: #fff;
-}
+
 
 .product-item:hover .border-warning {
     border-color: #fff !important;
@@ -88,3 +96,10 @@ background: 	#FCF0E4;
     height: 100%;
     opacity: 1;
 }
+
+.website-prevnex {
+  margin-top: 97px;
+  margin-bottom: 150px;
+
+}
+

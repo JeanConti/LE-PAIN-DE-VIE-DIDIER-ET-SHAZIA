@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produits: Pizza</title>
+  <link rel="shorcut icon" href="../../public/images/logo/Logo-vecteur-2.png">
+  <link rel="stylesheet" href="../../public/css/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../public/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header & Navbar -->
+  <%- include('../partials/header') %>
+
+    <!-- Mini Navbar -->
+    <nav class="mininav navbar navbar-expand-lg mt-5 pt-4">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse " id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-black" aria-current="page" href="../pages/home.html">Home |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="../pages/produits.html">Produits |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="./pizzas.html">Pizzas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Description -->
+    <section class='pizza'>
+      <div class="picture d-flex justify-content-center">
+        <img src="../../public/images/produits/pexels-catscoming-367915-grande-2.jpg"
+          class="img-fluid w-50 align-items-center" alt="...">
+      </div>
+      <div class="description text-center mt-5">
+        <h1 class="text-center">Pizzas artisanales bio</h1>
+        <p class="text-center"><strong>Des pizzas gourmandes, simples et authentiques</strong></p>
+        <p class="text-center">
+          Nos pizzas artisanales sont préparées à partir d’une pâte bio à fermentation lente, offrant une texture légère
+          et savoureuse.
+        </p>
+        <p class="text-center">Garnies d’ingrédients biologiques soigneusement sélectionnés, elles allient générosité,
+          <br>
+          fraîcheur et
+          équilibre
+          des saveurs. Chaque pizza est préparée sur place, dans le respect des recettes traditionnelles.
+        </p>
+        <p class="text-center">Que vous aimiez les recettes classiques ou plus créatives, <br> nos pizzas sont idéales
+          pour
+          un repas convivial et gourmand, à déguster à tout moment de la journée.</p>
+      </div>
+    </section>
+    <section class='website-prevnex'>
+      <a href="../pages/pain.ejs" style='margin-left: 80px;text-decoration: none; color: black;'><svg
+          xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+          class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+        </svg> Page précédente
+      </a>
+      <a href="../pages/brioche.ejs" style='margin-left: 616px;text-decoration: none; color: black;'>Page suivante
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+          class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+        </svg>
+      </a>
+    </section>
+
+
+
+    <!-- Footer -->
+    <%- include('../partials/footer') %>
+</body>
+<script src="../../public/css/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+
+</html>
