@@ -1,3 +1,8 @@
+*.zip
+*.pdf
+*.doc
+*.docx
+
 # compiled output
 /dist
 /node_modules

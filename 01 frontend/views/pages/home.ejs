@@ -25,7 +25,7 @@
 
         <!-- Carousel -->
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade mx-auto position-relative p-0"
-          style="max-width: 100%; height: 100vh;">
+          style="max-width: 100%; height: 100vh;" data-bs-ride="carousel" data-bs-interval="3000">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
@@ -33,10 +33,11 @@
               aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
               aria-label="Slide 3"></button>
+
           </div>
 
           <!-- Texte centré au-dessus de toutes les images -->
-          <div class="position-absolute top-50 start-50 translate-middle text-center w-75 w-md-50 w-lg-50"
+          <div class="position-absolute top-50 start-50 translate-middle text-center w-50 w-md-50 w-lg-50"
             style="z-index: 10;">
             <h1 class='text-light fs-3 fs-md-2 fs-lg-1 fw-bold bg-black bg-opacity-50 p-2 p-md-3 rounded mb-2 mb-md-3'>
               Le Pain de Vie
@@ -48,16 +49,16 @@
 
           <div class="carousel-inner h-100">
             <div class="carousel-item active h-100">
-              <img src="../../public/images/carousel/Assortiment de viennoiseries fraîches.png"
+              <img src="../../public/images/carousel/Mains-Croissant-2.png" class="d-block w-100 h-100 "
+                style="object-fit: cover;" alt="Boulangerie artisanale">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="../../public/images/carousel/Assortiment-de-viennoiseries-fraîches.png"
                 class="d-block w-100 h-100 " style="object-fit: cover;" alt="Boulangerie artisanale">
             </div>
             <div class="carousel-item h-100">
               <img src="../../public/images/carousel/Biscuits aux pépites de chocolat fraîchement cuits.png"
                 class="d-block w-100 h-100" style="object-fit: cover;" alt="Produits de boulangerie">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="../../public/images/carousel/Assortiment de viennoiseries fraîches.png"
-                class="d-block w-100 h-100" style="object-fit: cover;" alt="Pain frais">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -77,40 +78,40 @@
     <section class='mt-5'>
       <div class="container py-5">
         <div class="row g-4 justify-content-center">
-          <div class='col-12 col-sm-6 col-lg-3 wow fadeIn' data-wow-delay='0.1s'>
-            <div class="card text-center py-4 py-md-5 border-0 h-100">
+          <div class='col-12 col-sm-6 col-lg-3 wow fadeIn' data-bs-delay='0.1s'>
+            <div class="card-stats text-center py-4 py-md-5 border-0 h-100">
               <div class="card-body">
-                <i class="fa fa-certificate fa-3x fa-md-4x text-warning mb-3 mb-md-4"></i>
+                <i class="fa fa-certificate fa-3x fa-md-4x mb-3 mb-md-4" style="color: #6d3200;"></i>
                 <h5 class="card-title fw-bold">Années d'expérience</h5>
-                <h1 class="display-5 mb-0" data-toggle="counter-up">175</h1>
+                <h1 class="display-5 mb-0" data-toggle="counter-up">23</h1>
               </div>
             </div>
           </div>
 
-          <div class='col-12 col-sm-6 col-lg-3 wow fadeIn' data-wow-delay='0.2s'>
-            <div class="card text-center py-4 py-md-5 border-0 h-100">
+          <div class='col-12 col-sm-6 col-lg-3 wow fadeIn' data-bs-delay='0.2s'>
+            <div class="card-stats text-center py-4 py-md-5 border-0 h-100">
               <div class="card-body">
-                <i class="fa fa-users fa-3x fa-md-4x text-warning mb-3 mb-md-4"></i>
+                <i class="fa fa-users fa-3x fa-md-4x mb-3 mb-md-4" style="color: #6d3200;"></i>
                 <h5 class="card-title fw-bold">Professionnels qualifié</h5>
-                <h1 class="display-5 mb-0" data-toggle="counter-up">175</h1>
+                <h1 class="display-5 mb-0" data-toggle="counter-up">4</h1>
               </div>
             </div>
           </div>
 
-          <div class='col-12 col-sm-6 col-lg-3 wow fadeIn' data-wow-delay='0.3s'>
-            <div class="card text-center py-4 py-md-5 border-0 h-100">
+          <div class='col-12 col-sm-6 col-lg-3 wow fadeIn' data-bs-delay='0.3s'>
+            <div class="card-stats text-center py-4 py-md-5 border-0 h-100">
               <div class="card-body">
-                <i class="fa fa-bread-slice fa-3x fa-md-4x text-warning mb-3 mb-md-4"></i>
+                <i class="fa fa-bread-slice fa-3x fa-md-4x mb-3 mb-md-4" style="color: #6d3200;"></i>
                 <h5 class="card-title fw-bold">Produits BIO total</h5>
-                <h1 class="display-5 mb-0" data-toggle="counter-up">175</h1>
+                <h1 class="display-5 mb-0" data-toggle="counter-up">27</h1>
               </div>
             </div>
           </div>
 
-          <div class='col-12 col-sm-6 col-lg-3 wow fadeIn' data-wow-delay='0.4s'>
-            <div class="card text-center py-4 py-md-5 border-0 h-100">
+          <div class='col-12 col-sm-6 col-lg-3 wow fadeIn' data-bs-delay='0.4s'>
+            <div class="card-stats text-center py-4 py-md-5 border-0 h-100">
               <div class="card-body">
-                <i class="fa fa-cart-plus fa-3x fa-md-4x text-warning mb-3 mb-md-4"></i>
+                <i class="fa fa-cart-plus fa-3x fa-md-4x mb-3 mb-md-4" style="color: #6d3200;"></i>
                 <h5 class="card-title fw-bold">Commandes par jours</h5>
                 <h1 class="display-5 mb-0" data-toggle="counter-up">175</h1>
               </div>
@@ -126,32 +127,35 @@
         <div class="container">
           <div class="row g-5">
             <div class="col-lg-6 fadeInUp" data-bs-delay="0.1s">
-              <div class="row img-twice position-relative h-100">
+              <div class="row img-twice position-relative h-75">
                 <div class="col-6">
                   <img class="img-fluid rounded"
-                    src="/images/about/pexels-james-collington-2147687246-30395139-grande.jpg" alt="">
+                    src="../../public/images/about/pexels-james-collington-2147687246-30395139-grande.jpg" alt="">
                 </div>
                 <div class="col-6 align-self-end">
-                  <img class="img-fluid rounded" src="/images/about/pexels-683743993-31036609-grande.jpg" alt="">
+                  <img class="img-fluid rounded" src="../../public/images/about/pexels-683743993-31036609-grande.jpg"
+                    alt="">
                 </div>
               </div>
             </div>
             <div class="col-lg-6 fadeInUp" data-bs-delay="0.1s">
               <div class="h-100">
-                <p class="text-warning fw-bold text-uppercase">À propos de nous</p>
+                <p class="fw-bold text-uppercase" style="color: #6d3200;">À propos de nous</p>
                 <h1 class="display-6 mb-5">Nous Cuisons <br> Avec Amour & Passion</h1>
-                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
-                  erat
-                  ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
-                  erat
-                  ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <p>Depuis plusieurs années, notre boulangerie vous accueille chaque jour avec une même passion :
+                  celle du pain authentique, façonné dans le respect des traditions artisanales.</p>
+                <p>Nous sélectionnons avec soin des ingrédients de qualité, travaillés sur place par notre équipe de
+                  boulangers pour vous offrir des pains croustillants, des viennoiseries dorées et des pâtisseries
+                  gourmandes, préparés chaque matin.</p>
+                <p>Plus qu’un commerce de proximité, notre boulangerie est un lieu de partage, où le goût, la
+                  convivialité
+                  et le savoir-faire se rencontrent pour accompagner vos moments du quotidien.</p>
                 <div class="row g-3 mb-3">
                   <div class="col-12 col-sm-6">
-                    <i class="fa fa-check text-warning me-2"></i>Produits bio de qualité
+                    <i class="fa fa-check me-2" style="color: #6d3200;"></i>Produits bio de qualité
                   </div>
                   <div class="col-12 col-sm-6">
-                    <i class="fa fa-check text-warning me-2"></i>Livraison a domicile
+                    <!-- <i class="fa fa-check me-2" style="color: #6d3200;"></i>Livraison a domicile -->
                   </div>
                 </div>
               </div>
@@ -161,16 +165,23 @@
 
     </section>
 
+
+
     <!-- Section Best Bakery -->
     <section class='best-bakery mt-5 pt-5'>
       <div class='container-xxl bg-light my-5 py-5 pt-0'>
         <div class="container">
           <div
-            class="bg-warning text-light row align-items-center justify-content-center rounded p-4 p-md-5 my-5 mt-0 wow fadeInUp"
-            data-bs-delay="0.1s">
+            class="row text-light align-items-center justify-content-center rounded p-4 p-md-5 my-5 mt-0 wow fadeInUp"
+            data-bs-delay="0.1s" style="background-color: #6d3200;">
             <div class="col-12 col-lg-6 text-center mb-4 mb-lg-0">
-              <h1 class="display-6 fs-3 fs-md-4 fs-lg-5 text-light fw-bold mb-0">La
-                meilleure <br> boulangerie du Beaujolais</h1>
+              <img src="../../public/images/logo/Logo-vecteur.png" alt="Le Pain de Vie Logo"
+                class='img-fluid w-50 w-md-25 bg-light rounded'>
+            </div>
+            <div class="col-12 col-lg-6 text-center">
+              <h1 class="display-6 fs-3 fs-md-4 fs-lg-5 text-light fw-bold mb-0">
+                Pain artisanal BIO a l'ancienne
+              </h1>
             </div>
           </div>
         </div>
@@ -181,40 +192,41 @@
     <section class='produits mt-5 mb-5 pt-5'>
       <div class="container-xxl my-6 py-6 pt-0">
         <div class="container">
-          <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-            <p class="text-warning fw-bold text-uppercase mb-2">Nos produits</p>
-            <h1 class="display-6 mb-4">Explore les produits <br> de notre boulangerie</h1>
+          <div class="text-center mx-auto mb-5 wow fadeInUp" data-bs-delay="0.1s" style="max-width: 500px;">
+            <p class=" fw-bold text-uppercase mb-2" style="color: #6d3200;">Nos produits</p>
+            <h1 class="display-6 mt-4 mb-4">Explorez les produits <br> de notre boulangerie</h1>
           </div>
           <div class="row g-4">
             <div class="col-lg-4 col-md-6 wow fade-inUp" data-bs-delay="0.1s">
               <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
                 <div class="text-center p-4">
-                  <div class="d-inline-block border border-warning rounded-pill px-3 mb-3">$11 - $99</div>
+                  <div class="d-inline-block border border-light rounded-pill px-3 mb-3">5,90€ - 8,60€</div>
                   <h3 class="mb-3">Pain</h3>
-                  <span>Pain artisanal de qualité</span>
+                  <span>Pain artisanal fait avec passion!</span>
                 </div>
                 <div class="position-relative mt-auto">
-                  <img class="img-fluid" src="/images/produits/Pains.jpg" alt="">
+                  <img class="img-fluid" src="../../public/images/produits/Pains.jpg" alt="">
                   <div class="product-overlay">
-                    <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i
-                        class="fa fa-eye text-warning"></i></a>
+                    <a class="btn btn-lg-square btn-outline-light rounded-circle text-light" href="./"><i
+                        class="fa fa-eye"></i></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-bs-delay="0.3s">
               <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
                 <div class="text-center p-4">
-                  <div class="d-inline-block border border-warning rounded-pill px-3 mb-3">$11 - $99
+                  <div class="d-inline-block border border-light rounded-pill px-3 mb-3">8,60€ - 12,50€
                   </div>
                   <h3 class="mb-3">Pizza</h3>
                   <span>Pizza de qualité</span>
                 </div>
                 <div class="position-relative mt-auto">
-                  <img class="img-fluid" src="/images/produits/pexels-catscoming-367915-grande-2.jpg" alt="">
+                  <img class="img-fluid" src="../../public/images/produits/pexels-catscoming-367915-grande-2.jpg"
+                    alt="">
                   <div class="product-overlay">
-                    <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i
-                        class="fa fa-eye text-warning"></i></a>
+                    <a class="btn btn-lg-square btn-outline-light rounded-circle text-light" href=""><i
+                        class="fa fa-eye"></i></a>
                   </div>
                 </div>
               </div>
@@ -222,17 +234,17 @@
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
                 <div class="text-center p-4">
-                  <div class="d-inline-block border border-warning rounded-pill px-3 mb-3 align-items-center">$11 -
-                    $99
+                  <div class="d-inline-block border border-warning rounded-pill px-3 mb-3 align-items-center">3,60€ -
+                    5,50€
                   </div>
                   <h4 class="mb-3">Viennoiseries</h4>
                   <span>Délicieuses viennoiseries</span>
                 </div>
                 <div class="position-relative mt-auto">
-                  <img class="img-fluid" src="/images/produits/Viennoiseries.jpg" alt="">
+                  <img class="img-fluid" src="../../public/images/produits/Viennoiseries.jpg" alt="">
                   <div class="product-overlay">
-                    <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i
-                        class="fa fa-eye text-warning"></i></a>
+                    <a class="btn btn-lg-square btn-outline-light rounded-circle text-light" href=""><i
+                        class="fa fa-eye"></i></a>
                   </div>
                 </div>
               </div>
@@ -249,44 +261,46 @@
           <div class="row g-5">
             <div class="col-lg-6 fadeInUp" data-bs-delay="0.1s">
               <div class="h-100">
-                <p class="text-warning fw-bold text-uppercase">Nos services</p>
+                <p class="fw-bold text-uppercase" style="color: #6d3200;">Nos services</p>
                 <h1 class="display-6 mb-5">Que ce que <br> nous pouvons vous offrir ?</h1>
                 <p>Afin de vous offrir la meilleure expérience possible, nous mettons à votre disposition plusieurs
-                  services adaptés à vos besoins :</p>
-                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
-                  erat
+                  services adaptés à vos besoins:</p>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
                   ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                 <div class="row gy-3 gx-4">
                   <div class="col-12 col-sm-6 bs-fade-in-up" data-bs-delay="0.2s">
-                    <div class='d-flex align-items-center mb-2'>
-                      <i class="fa fa-bread-slice text-warning me-2 fs-4"></i>
-                      <p class='mb-1 '>Produits de qualité</p>
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="fa fa-bread-slice fs-4" style="color: #6d3200;"></i>
+                      <span>Produits de qualité</span>
                     </div>
                   </div>
 
                   <div class="col-12 col-sm-6 bs-fade-in-up" data-bs-delay="0.3s">
-                    <div class='d-flex align-items-center mb-2'>
-                      <i class="fa fa-truck text-warning me-2 fs-4"></i>
-                      <p class='mb-1 '>Livraison à domicile</p>
-                    </div>
+                    <!-- <div class="d-flex align-items-center gap-2">
+                    <i class="fa fa-truck fs-4" style="color: #6d3200;"></i>
+                    <span>Livraison à domicile</span>
+                  </div> -->
                   </div>
                 </div>
+
               </div>
             </div>
             <div class="col-lg-6 fadeInUp" data-bs-delay="0.1s">
               <div class="row img-twice position-relative h-100">
                 <div class="col-6">
                   <img class="img-fluid rounded"
-                    src="/images/about/pexels-james-collington-2147687246-30395139-grande.jpg" alt="">
+                    src="../../public/images/about/pexels-james-collington-2147687246-30395139-grande.jpg" alt="">
                 </div>
                 <div class="col-6 align-self-end">
-                  <img class="img-fluid rounded" src="/images/about/pexels-683743993-31036609-grande.jpg" alt="">
+                  <img class="img-fluid rounded" src="../../public/images/about/pexels-683743993-31036609-grande.jpg"
+                    alt="">
                 </div>
               </div>
             </div>
           </div>
         </div>
     </section>
+
 
 
 
