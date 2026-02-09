@@ -27,47 +27,99 @@
   </section>
 
   <!-- Section Contact -->
-  <section class='contact-form'>
+  <section class="contact-form">
     <div class="container-xxl py-6">
       <div class="container">
-        <div class='text-center mx-auto mb-5' data-bs-delay="0.1s" style="max-width: 500px;">
-          <h1 class='display-6 fw-bold mb-4'>Si vous avez besoin d'aide ou une question n'hésitez pas à nous contacter
+
+        <!-- TITRE -->
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+          <h1 class="display-6 fw-bold">
+            Si vous avez besoin d'aide ou une question, n'hésitez pas à nous contacter
           </h1>
         </div>
-        <div class="row g-0 justify-content-center">
-          <div class='col-lg-8 fade-up' data-bs-delay='0.1s'>
-            <form>
+
+        <!-- FORM + INFOS -->
+        <div class="row g-5 align-items-stretch">
+
+          <!-- FORMULAIRE -->
+          <div class="col-lg-7">
+            <form class="p-4 rounded border border-dark h-100">
               <div class="row g-3">
+
                 <div class="col-md-6">
-                  <div class="form-floating">
-                    <input type="email" class="form-control" id="nom" name='nom' placeholder="Votre nom">
+                  <div class="form-floating border border-dark rounded">
+                    <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom">
                     <label for="nom">Votre nom</label>
                   </div>
                 </div>
+
                 <div class="col-md-6">
-                  <div class="form-floating">
-                    <input type="email" class="form-control" id="email" name='email' placeholder="Votre email">
+                  <div class="form-floating border border-dark rounded">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Votre email">
                     <label for="email">Votre email</label>
                   </div>
                 </div>
+
                 <div class="col-12">
-                  <div class="form-floating">
-                    <input type="objet" class="form-control" id="object" name='object' placeholder="Object">
-                    <label for="object">Object</label>
+                  <div class="form-floating border border-dark rounded">
+                    <input type="text" class="form-control" id="object" name="object" placeholder="Objet">
+                    <label for="object">Objet</label>
                   </div>
                 </div>
+
                 <div class="col-12">
-                  <div class="form-floating">
-                    <textarea class="form-control" id="message" name='message' placeholder="Votre message"
-                      style="height: 250px;"></textarea>
+                  <div class="form-floating border border-dark rounded">
+                    <textarea class="form-control" id="message" name="message" placeholder="Votre message"
+                      style="height: 220px;"></textarea>
                     <label for="message">Votre message</label>
                   </div>
                 </div>
-                <div class="col-12 text-center">
-                  <button class="btn btn-warning rounded-pill py-3 px-5" type="submit" id="submit"
-                    name='submit'>Envoyer</button>
+
+                <div class="col-12 text-center mt-4">
+                  <button class="btn text-light rounded-pill py-3 px-5" style="background-color: #6d3200;"
+                    type="submit">
+                    Envoyer
+                  </button>
                 </div>
+
+              </div>
             </form>
+          </div>
+
+          <!-- INFOS CONTACT -->
+          <div class="col-lg-5">
+            <div class="p-4 rounded border border-dark h-100">
+
+              <h4 class="mb-4" style="color:#6d3200;">Informations de contact</h4>
+
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <i class="fa fa-map-marker-alt fs-4" style="color:#6d3200;"></i>
+                <span>
+                  2448 Route de Saint Julien, 69460 Blacé
+                </span>
+              </div>
+
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <i class="fa fa-phone-alt fs-4" style="color:#6d3200;"></i>
+                <span>06 17 51 54 08</span>
+              </div>
+
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <i class="fa fa-envelope fs-4" style="color:#6d3200;"></i>
+                <span>didier.genetier7@gmail.com</span>
+              </div>
+
+              <hr>
+
+              <p class="fw-semibold mb-2" style="color:#6d3200;">Horaires d’ouverture</p>
+              <p class="mb-1"><strong>Maisonnette de Blaceret:</strong> <br>Lundi - Mercredi - Vendredi: 15h30 - 19h30
+              </p>
+              <p class="mb-1"><strong>Marché Bio de Vilefranche:</strong> <br>Samedi: 8h00 - 12h30</p>
+              <p class="mb-1"><strong>Marché Bio du Bois d'Oing:</strong> <br>Mardi: 8h00 - 12h, Vendredi: 15h00 - 19h00
+              </p>
+              <p class="mb-1"><strong>Marché Bio de Jassan:</strong> <br>Mercredi: 15h00 - 19h00</p>
+
+            </div>
           </div>
 
         </div>
