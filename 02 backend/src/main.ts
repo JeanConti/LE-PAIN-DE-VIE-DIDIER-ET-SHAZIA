@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import helmet from 'helmet';
@@ -23,7 +24,7 @@ async function bootstrap() {
   }) 
 
   // Lancer le serveur sur le port 3800
-  await app.listen(process.env.PORT ?? 3800);
+  await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
 
