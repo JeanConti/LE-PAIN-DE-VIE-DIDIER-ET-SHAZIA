@@ -11,6 +11,8 @@ async function bootstrap() {
   // Inclure Helmet pour la sécurité
   app.use(helmet())
 
+  
+
   // Utiliser les pipes pour la validation des données
   app.useGlobalPipes(new ValidationPipe({
     whitelist: true,
