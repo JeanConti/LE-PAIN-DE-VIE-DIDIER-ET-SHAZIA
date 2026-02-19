@@ -21,13 +21,16 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@nestjs-modules/mailer": "^2.0.2",
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
     "@nestjs/platform-express": "^11.0.1",
     "@nestjs/throttler": "^6.5.0",
     "@prisma/client": "^7.2.0",
+    "@types/nodemailer": "^7.0.9",
     "helmet": "^8.1.0",
     "mysql2": "^3.16.0",
+    "nodemailer": "^8.0.1",
     "prisma": "^7.2.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"
