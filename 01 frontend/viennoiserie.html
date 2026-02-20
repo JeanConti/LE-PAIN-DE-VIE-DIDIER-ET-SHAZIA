@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produits: Brioches</title>
+  <title>Produits: Viennaiseries</title>
   <link rel="shorcut icon" href="../../public/images/logo/Logo-vecteur-2.png">
   <link rel="stylesheet" href="../../public/css/bootstrap-5.3.8-dist/css/bootstrap.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
       <div class="container-fluid">
 
         <a class="navbar-brand" href="../pages/home.html">
-          <img src="../../public/images/logo/Logo-vecteur-2.png" alt="Bootstrap" width="50px">
+          <img src="../../public/images/logo/Logo-vecteur.png" alt="Bootstrap" width="50px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,16 +28,19 @@
         <div class="collapse navbar-collapse justify-content-center me-5" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-light" aria-current="page" href="../pages/home.html">Home</a>
+              <a class="nav-link text-light" aria-current="page" href="./home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="../pages/produits.html">Produits</a>
+              <a class="nav-link text-light" href="./produits.html">Produits</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="../pages/about.html">About</a>
+              <a class="nav-link text-light" href="./about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="../pages/contact.html">Contact</a>
+              <a class="nav-link text-light" href="./galerie.html">Galerie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -45,19 +48,19 @@
     </nav>
   </header>
 
-
-  <nav class="mininav navbar navbar-expand-lg pt-4" style='margin-top: 80px;'>
+  <!-- Mini Navbar -->
+  <nav class="mininav navbar navbar-expand-lg pt-4" style="margin-top: 80px;">
     <div class="container-fluid">
       <div class="collapse navbar-collapse " id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-black" aria-current="page" href="./home.html">Home |</a>
+            <a class="nav-link text-black" aria-current="page" href="../pages/home.html">Home |</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black" href="./produits.html">Produits |</a>
+            <a class="nav-link text-black" href="../pages/produits.html">Produits |</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black" href="#">Brioche</a>
+            <a class="nav-link text-black" href="./viennoiseries.html">Viennoiseries</a>
           </li>
         </ul>
       </div>
@@ -65,21 +68,55 @@
   </nav>
 
 
-
-  <section class='brioche '>
+  <!-- Description -->
+  <section class='viennoiserie'>
     <div class="picture d-flex justify-content-center">
-      <img src="../../public/images/produits/Brioche-grande.jpg" class="img-fluid w-50 align-items-center rounded"
+      <img src="../../public/images/produits/Viennoiseries.jpg" class="img-fluid w-50 align-items-center rounded"
         alt="...">
     </div>
-    <div class="description text-center mt-4">
-      <h1 class="text-center">Brioche</h1>
-      <p class=""><strong>La douceur du fait maison</strong> </p>
-      <p class=''>Nos brioches artisanales bio sont confectionnées avec des ingrédients simples et naturels: <br>farine
-        bio, œufs frais, beurre de qualité et sucre non raffiné.</p>
-      <p class=''>Moelleuses, parfumées et délicatement dorées, <br> elles sont idéales pour le petit-déjeuner, le
-        goûter ou les moments de partage en famille.</p>
-      <p class=''>Préparées avec patience et savoir-faire, nos brioches offrent une texture fondante et un goût
-        authentique, sans additifs ni conservateurs.</p>
+    <div class="description text-center mt-5">
+      <h1 class="text-center">7 variétés de viennoiseries bio</h1>
+      <p class="text-center"><strong>Le plaisir du feuilletage artisanal</strong></p>
+      <p class="text-center">
+        Chaque semaine, nous préparons nos viennoiseries à partir de beurre bio de qualité et <br> de farines
+        biologiques,
+        travaillés selon les règles de l’art.
+      </p>
+      <p class="text-center">Nous vous proposons notamment:</p>
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <!-- Colonne 1 -->
+          <div class="col-md-6 text-start">
+            <ol class="list-unstyled">
+              <li class="d-flex justify-content-between mb-2">
+                <span>Croissant</span>
+                <span class="fw-bold">1,70 €</span>
+              </li>
+              <li class="d-flex justify-content-between mb-2">
+                <span>Cr. fourré <br> (chocolat, marron, fraise-myritlle, gingembre)</span>
+                <span class="fw-bold">1,90 €</span>
+              </li>
+              <li class="d-flex justify-content-between mb-2">
+                <span>Cookies (coco ou citron)</span>
+                <span class="fw-bold">1,50 €</span>
+              </li>
+              <li class="d-flex justify-content-between mb-2">
+                <span>Cookies (châtaigne sans beurre <br> et sans gluten)</span>
+                <span class="fw-bold">1,50 €</span>
+              </li>
+              <li class="d-flex justify-content-between mb-2">
+                <span>Amaretti</span>
+                <span class="fw-bold">1,80 €</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span>V.D.D. (Viennois Dit Diététique)</span>
+                <span class="fw-bold">4,00 €</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -88,7 +125,7 @@
       <div class="col-12 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
 
         <!-- Page précédente -->
-        <a href="../pages/pizza.html" class="text-decoration-none text-dark d-flex align-items-center gap-2">
+        <a href="../pages/brioche.html" class="text-decoration-none text-dark d-flex align-items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
             class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
             <path
@@ -98,7 +135,7 @@
         </a>
 
         <!-- Page suivante -->
-        <a href="../pages/viennoiserie.html" class="text-decoration-none text-dark d-flex align-items-center gap-2">
+        <a href="../pages/pain.html" class="text-decoration-none text-dark d-flex align-items-center gap-2">
           <span>Page suivante</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
             class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
@@ -110,6 +147,7 @@
       </div>
     </div>
   </section>
+
 
 
   <!-- Footer -->
@@ -138,6 +176,22 @@
             <i class="fa fa-envelope fs-5 text-light"></i>
             <span>didier.genetier7@gmail.com</span>
           </div>
+
+          <div class="d-flex gap-2">
+            <a class="btn btn-outline-light rounded-circle" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="btn btn-outline-light rounded-circle"
+              href="https://www.facebook.com/profile.php?id=100068434713664&locale=es_LA">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn btn-outline-light rounded-circle" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a class="btn btn-outline-light rounded-circle" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
         </div>
 
         <!-- ESPACE VISUEL (desktop only) -->
@@ -156,8 +210,6 @@
       </div>
     </div>
   </div>
-
-
 
 </body>
 <script src="../../public/css/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
