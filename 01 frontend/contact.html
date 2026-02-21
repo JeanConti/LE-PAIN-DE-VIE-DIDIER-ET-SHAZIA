@@ -76,7 +76,7 @@
 
           <!-- FORMULAIRE -->
           <div class="col-lg-7">
-            <form class="p-4 rounded border border-dark h-100">
+            <form id="contactForm" class="p-4 rounded border border-dark h-100">
               <div class="row g-3">
 
                 <div class="col-md-6">
@@ -108,9 +108,11 @@
                   </div>
                 </div>
 
+                <div id="formMessage" class="col-12 text-center mt-3" style="display:none;"></div>
+
                 <div class="col-12 text-center mt-4">
-                  <button class="btn text-light rounded-pill py-3 px-5" style="background-color: #6d3200;"
-                    type="submit">
+                  <button id="submitBtn" class="btn text-light rounded-pill py-3 px-5"
+                    style="background-color: #6d3200;" type="submit">
                     Envoyer
                   </button>
                 </div>
@@ -212,5 +214,56 @@
 
 </body>
 <script src="public/css/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+
+<script>
+  // URL du backend : en local utilise localhost:3000, en production utilise l'URL Render
+  const API_URL = window.location.hostname === 'localhost'
+    ? 'http://localhost:3000/contact'
+    : 'https://shazia-back.onrender.com/contact';
+
+  document.getElementById('contactForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const btn = document.getElementById('submitBtn');
+    const msgDiv = document.getElementById('formMessage');
+
+    const payload = {
+      nom: document.getElementById('nom').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      object: document.getElementById('object').value.trim(),
+      message: document.getElementById('message').value.trim(),
+    };
+
+    btn.disabled = true;
+    btn.textContent = 'Envoi en cours...';
+    msgDiv.style.display = 'none';
+
+    try {
+      const response = await fetch(API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      if (response.ok) {
+        msgDiv.innerHTML = '<div class="alert alert-success">✅ Votre message a bien été envoyé ! Nous vous répondrons rapidement.</div>';
+        msgDiv.style.display = 'block';
+        document.getElementById('contactForm').reset();
+      } else {
+        const err = await response.json().catch(() => ({}));
+        msgDiv.innerHTML = '<div class="alert alert-danger">❌ Une erreur est survenue. Veuillez réessayer.</div>';
+        msgDiv.style.display = 'block';
+        console.error('Erreur serveur:', err);
+      }
+    } catch (error) {
+      msgDiv.innerHTML = '<div class="alert alert-danger">❌ Impossible de joindre le serveur. Vérifiez votre connexion.</div>';
+      msgDiv.style.display = 'block';
+      console.error('Erreur réseau:', error);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Envoyer';
+    }
+  });
+</script>
 
 </html>
