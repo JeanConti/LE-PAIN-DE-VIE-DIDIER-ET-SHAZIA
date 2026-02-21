@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.render("pages/home", {
+  res.render("pages/index", {
     nomBoulangerie: "Le Pain de Vie"
   });
 });
