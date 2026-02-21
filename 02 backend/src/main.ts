@@ -10,8 +10,7 @@ async function bootstrap() {
 
   // Inclure Helmet pour la sécurité
   app.use(helmet())
-
-  
+ 
 
   // Utiliser les pipes pour la validation des données
   app.useGlobalPipes(new ValidationPipe({
@@ -21,7 +20,13 @@ async function bootstrap() {
 
   // CORS => Permettre les requêtes
   app.enableCors({
-    origin: 'http://localhost:3800',
+    origin: [
+      'http://localhost:3000',              // Ton test local
+      'https://shazia.fr',                  // Ton domaine final
+      'https://www.shazia.fr',              // Version avec www
+      'https://shazia-front.onrender.com'
+    ],
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   }) 
 
