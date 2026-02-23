@@ -23,7 +23,9 @@ async function bootstrap() {
     origin: [
       'https://shazia.fr',
       'https://www.shazia.fr',
+      'https://shazia-front.onrender.com',
       'http://localhost:3000',
+      'http://localhost:3800',
     ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
