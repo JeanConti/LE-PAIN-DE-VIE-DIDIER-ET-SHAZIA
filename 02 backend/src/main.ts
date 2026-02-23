@@ -9,7 +9,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   // Inclure Helmet pour la sécurité
-  app.use(helmet())
+  // app.use(helmet())
  
 
   // Utiliser les pipes pour la validation des données
