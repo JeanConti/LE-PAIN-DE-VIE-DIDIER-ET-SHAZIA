@@ -21,7 +21,7 @@ async function bootstrap() {
   // CORS => Permettre les requêtes
   app.enableCors({
     origin: [
-      ['https://shazia.fr', 'https://www.shazia.fr'],  // Ton test local
+      // Ton test local
       'https://shazia.fr',                            // Ton domaine final
       'https://www.shazia.fr',                        // Version avec www
       'https://shazia-front.onrender.com'
