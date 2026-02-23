@@ -217,9 +217,9 @@
 
 <script>
   // URL du backend : en local utilise localhost:3000, en production utilise l'URL Render
-  const API_URL = window.location.hostname === 'localhost'
-    ? 'http://localhost:3000/contact'
-    : 'https://shazia-back.onrender.com/contact';
+const API_URL = window.location.hostname === 'localhost'
+    ? 'http://localhost:3000/api/contact'
+    : 'https://shazia-back.onrender.com/api/contact';
 
   document.getElementById('contactForm').addEventListener('submit', async function (e) {
     e.preventDefault();
